@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – RevZone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Rev<span class="accent">Zone</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1><span class="accent">All</span> Articles</h1>
+      <p>Reviews, news, builds, and more – your full automotive feed.</p>
+    </div>
+  </div>
+
+  <section class="section blog-page">
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="reviews">Reviews</button>
+      <button class="filter-btn" data-cat="news">News</button>
+      <button class="filter-btn" data-cat="builds">Builds</button>
+      <button class="filter-btn" data-cat="ev">EV</button>
+      <button class="filter-btn" data-cat="classics">Classics</button>
+      <button class="filter-btn" data-cat="lifestyle">Lifestyle</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Search articles…" />
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="posts-grid" id="blogGrid"></div>
+    <div id="noResults" class="no-results hidden"><i class="fas fa-car-crash"></i><p>No articles found. Try a different search!</p></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Rev<span class="accent">Zone</span></a>
+        <p>A blog by car fans, for car fans.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 RevZone. Made with <i class="fas fa-heart"></i> by SaadLagan.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

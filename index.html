@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RevZone – Car Fan Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-car-side"></i>
+        <span>Rev<span class="accent">Zone</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag"><i class="fas fa-flag-checkered"></i> Welcome to RevZone</p>
+      <h1>Your Ultimate<br /><span class="accent">Car Fan</span> Blog</h1>
+      <p class="hero-sub">Reviews · News · Builds · Lifestyle – Everything automotive, all in one place.</p>
+      <div class="hero-actions">
+        <a href="blog.html" class="btn btn-primary">Explore Articles <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="btn btn-outline">About Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </header>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="stat"><span class="stat-num" data-target="240">0</span><span class="stat-label">Articles</span></div>
+    <div class="stat"><span class="stat-num" data-target="18500">0</span><span class="stat-label">Readers / Mo</span></div>
+    <div class="stat"><span class="stat-num" data-target="95">0</span><span class="stat-label">Car Reviews</span></div>
+    <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Years of Passion</span></div>
+  </section>
+
+  <!-- ===== FEATURED POSTS ===== -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <span class="section-tag">Hot Off the Press</span>
+      <h2>Featured <span class="accent">Articles</span></h2>
+    </div>
+    <div class="posts-grid" id="featuredGrid"></div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section categories-section">
+    <div class="section-header">
+      <span class="section-tag">Browse by Topic</span>
+      <h2>Explore <span class="accent">Categories</span></h2>
+    </div>
+    <div class="categories-grid">
+      <a href="blog.html?cat=reviews" class="cat-card">
+        <i class="fas fa-star"></i>
+        <h3>Car Reviews</h3>
+        <p>In-depth tests of the latest models</p>
+      </a>
+      <a href="blog.html?cat=news" class="cat-card">
+        <i class="fas fa-newspaper"></i>
+        <h3>Auto News</h3>
+        <p>Breaking stories from the motor world</p>
+      </a>
+      <a href="blog.html?cat=builds" class="cat-card">
+        <i class="fas fa-wrench"></i>
+        <h3>Builds & Mods</h3>
+        <p>Custom projects & performance upgrades</p>
+      </a>
+      <a href="blog.html?cat=ev" class="cat-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Electric Vehicles</h3>
+        <p>The future of driving, today</p>
+      </a>
+      <a href="blog.html?cat=classics" class="cat-card">
+        <i class="fas fa-car"></i>
+        <h3>Classic Cars</h3>
+        <p>Legends of the automotive golden age</p>
+      </a>
+      <a href="blog.html?cat=lifestyle" class="cat-card">
+        <i class="fas fa-road"></i>
+        <h3>Lifestyle</h3>
+        <p>Road trips, events & car culture</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Stay in the Fast Lane</h2>
+      <p>Get the best car content delivered straight to your inbox, weekly.</p>
+      <form class="newsletter-form" id="nlForm">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <p class="nl-note" id="nlNote"></p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Rev<span class="accent">Zone</span></a>
+        <p>A blog by car fans, for car fans. Fuelled by passion, driven by content.</p>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/SaadLagan" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="blog.html?cat=reviews">Car Reviews</a></li>
+          <li><a href="blog.html?cat=news">Auto News</a></li>
+          <li><a href="blog.html?cat=builds">Builds & Mods</a></li>
+          <li><a href="blog.html?cat=ev">Electric Vehicles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 RevZone. Made with <i class="fas fa-heart"></i> by SaadLagan.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

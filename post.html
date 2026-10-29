@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article – RevZone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Rev<span class="accent">Zone</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <article class="article-page" id="articlePage">
+    <!-- Populated by post.js -->
+  </article>
+
+  <!-- Related Posts -->
+  <section class="section" id="relatedSection" style="display:none">
+    <div class="section-header">
+      <h2>Related <span class="accent">Articles</span></h2>
+    </div>
+    <div class="posts-grid" id="relatedGrid"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fas fa-car-side"></i> Rev<span class="accent">Zone</span></a>
+        <p>A blog by car fans, for car fans.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 RevZone. Made with <i class="fas fa-heart"></i> by SaadLagan.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
